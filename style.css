@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #548ca3;
+  font-family: sans-serif;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-gradient {
+    background-image: none !important;
+}
+
+.text-bg-primary {
+  background-color: #fdfdfd00 !important;
+}
+
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.text-shadow-1 {
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+.text-shadow-2 {
+  text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+.text-shadow-3 {
+  text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
+}
+
+.container-top {
+  background-color: #548ca3;
+  height: 1.5rem;
+}
+
+.nav-link {
+  color: #212529bf;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.fs-4 {
+  font-family: "Quicksand", sans-serif;
+  color: #3d6879;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.lead {
+  color: #3d6879;
+}
+
+.sm-txt {
+  font-size: 0.5em;
+  font-weight: bold;
+}
+
+.md-txt {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.lg-txt {
+  font-size: 5em;
+}
+
+.sub-txt {
+  color: #3d6879;
+}
+
+.mb-6 {
+  margin-bottom: 5rem;
+}
+
+.mb-8 {
+  margin-bottom: 8rem;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 10px;
+}
+
+/* #my-work .dot {
+  background-color: #212529;
+} */
+
+.white-underline {
+  color: white;
+  text-decoration: underline;
+}
+
+.title-section {
+  min-height: 400px;
+  width: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background-color: #152329;
+}
+
+.img {
+  height: 50%;
+  border-radius: 5%;
+}
+
+.my-work-section {
+  min-height: 400px;
+  background-color: #5893ab;
+}
+
+.education-section {
+  background-color: #5893ab;
+}
+
+img {
+  background-size: cover;
+}
+
+.sm-img {
+  height: 5rem;
+}

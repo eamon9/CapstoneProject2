@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to My Journey</h1>
+    <p>Discover my transition from culinary arts to programming and everything in between!</p>
+  </header>
+
+  <!-- About Me Section -->
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>I am an aspiring programmer with a passion for problem-solving and coding. My journey to this career is fueled by
+      a drive to see tangible results from my work and to engage in structured, logical thinking.</p>
+    <p>Programming offers a path to stability and growth, which aligns well with my professional goals and desire for
+      flexible work options, including both remote and on-site opportunities. Inspired by friends in the field, I am
+      excited about the possibilities this career shift holds.</p>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <h2>Education</h2>
+    <p><strong>Professional Secondary Education:</strong> Culinary School</p>
+  </section>
+
+  <!-- Programming Journey Section -->
+  <section class="section expandable" id="programming-journey">
+    <h2 onclick="toggleSection('programming-details')">My Programming Journey +</h2>
+    <div id="programming-details" class="hidden">
+      <p>I have hands-on experience with programming languages like Java, SQL, JavaScript, TypeScript, HTML, and CSS.
+        Driven by self-learning, I have completed multiple courses on platforms such as YouTube, Codecademy, and Udemy.
+      </p>
+      <p>During my internship at Accenture, I spent six months working with SAP systems and learned Java. I supported
+        projects with presentations, documentation, and contributed to the team. Although my time there ended without a
+        continuation, I gained valuable experience that strengthened my programming skills.</p>
+      <p>I also developed a warehouse application for visually organizing and locating documents within a shelving
+        system using JUnit, MySQL, and JavaFX. Alongside, I explored database visualization and improved project
+        organization using Trello.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section expandable" id="projects">
+    <h2 onclick="toggleSection('projects-details')">Projects +</h2>
+    <div id="projects-details" class="hidden">
+      <p>Here are some projects that highlight my programming skills and creativity:</p>
+      <ul>
+        <li><strong>Allowance App:</strong> An automated application that manages allowances based on completed
+          household tasks, distributing weekly funds.</li>
+        <li><strong>Math Practice Tool:</strong> A multiplication app created for my son to help with learning
+          multiplication tables. It includes features for tracking correct answers, time taken, and overall results.
+        </li>
+        <li><strong>Popular Apps:</strong> Created a variety of applications including a calculator, TicTacToe, banking
+          simulator, and the classic "Snake" game, showcasing versatility in coding for both utility and fun.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section class="section expandable" id="work-experience">
+    <h2 onclick="toggleSection('experience-details')">Work Experience +</h2>
+    <div id="experience-details" class="hidden">
+      <p>With a rich background in the culinary industry, I have held positions from cleaner and stock receiver to chef,
+        senior chef, and even acting manager. Each role helped me build resilience, creativity, and teamwork skills that
+        now support my programming career.</p>
+      <p>In parallel, I worked in an archiving company, managing tasks such as document organization, client
+        consultations, and finding innovative solutions to improve efficiency. These experiences cultivated my attention
+        to detail and problem-solving abilities.</p>
+      <p>Due to recent health changes, I transitioned away from physically demanding work and have spent the last three
+        years preparing for a career in programming. I am excited to bring my unique perspective and skills into this
+        field.</p>
+    </div>
+  </section>
+
+  <!-- Footer with Call to Action -->
+  <footer>
+    <p>Interested in learning more? <a href="#contact">Contact Me</a> to chat!</p>
+  </footer>
+
+  <!-- JavaScript for Expandable Sections -->
+  <script src="script.js"></script>
+</body>
+
+</html>
