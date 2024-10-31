@@ -19,7 +19,7 @@ a {
 }
 
 .bg-gradient {
-    background-image: none !important;
+  background-image: none !important;
 }
 
 .text-bg-primary {
@@ -161,4 +161,11 @@ img {
 
 #card {
   background-color: #00000080;
+}
+
+#card:hover {
+  background-color: #00000000;
+  h3 {
+    opacity: 0;
+  }
 }
