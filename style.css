@@ -98,9 +98,9 @@ a {
   font-weight: bold;
 }
 
-.lg-txt {
+/* .lg-txt {
   font-size: 5em;
-}
+} */
 
 .sub-txt {
   color: #3d6879;
@@ -115,13 +115,13 @@ a {
 }
 
 .dot {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background-color: white;
   border-radius: 50%;
   display: inline-block;
   vertical-align: bottom;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .white-underline {
@@ -180,4 +180,48 @@ img {
 #card:hover h3,
 #card:hover ul {
   opacity: 0;
+}
+
+#about,
+#education,
+#my-journey,
+#my-work,
+#experience {
+  white-space: nowrap;
+}
+
+@media (min-width: 576px) {
+  /* sm */
+  /* .dot {
+    width: 12px;
+    height: 12px;
+    margin-bottom: 6px;
+  } */
+}
+
+@media (min-width: 768px) {
+  /* md */
+  /* .dot {
+    width: 12px;
+    height: 12px;
+    margin-bottom: 8px;
+  } */
+}
+
+@media (min-width: 992px) {
+  /* lg */
+  /* .dot {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 8px;
+  } */
+}
+
+@media (min-width: 1200px) {
+  /* xl */
+  /* .dot {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 8px;
+  } */
 }
