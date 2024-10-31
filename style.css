@@ -18,6 +18,8 @@ a {
   text-decoration: none;
 }
 
+/* bootstrap edited */
+
 .bg-gradient {
   background-image: none !important;
 }
@@ -84,6 +86,8 @@ a {
   color: #3d6879;
 }
 
+/* my own properties */
+
 .sm-txt {
   font-size: 0.5em;
   font-weight: bold;
@@ -120,10 +124,6 @@ a {
   margin-bottom: 10px;
 }
 
-/* #my-work .dot {
-  background-color: #212529;
-} */
-
 .white-underline {
   color: white;
   text-decoration: underline;
@@ -142,6 +142,8 @@ a {
   border-radius: 5%;
 }
 
+/* sections */
+
 .my-work-section {
   min-height: 400px;
   background-color: #5893ab;
@@ -150,6 +152,8 @@ a {
 .education-section {
   background-color: #5893ab;
 }
+
+/* other */
 
 img {
   background-size: cover;
@@ -161,11 +165,19 @@ img {
 
 #card {
   background-color: #00000080;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+#card h3,
+#card ul {
+  transition: opacity 0.3s ease;
 }
 
 #card:hover {
   background-color: #00000000;
-  h3 {
-    opacity: 0;
-  }
+}
+
+#card:hover h3,
+#card:hover ul {
+  opacity: 0;
 }
