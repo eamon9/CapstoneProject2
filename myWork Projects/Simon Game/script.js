@@ -17,7 +17,7 @@ function playAudio(color) {
 function flashButton(color) {
   $(`.${color}`).addClass("pressed");
   playAudio(color);
-  setTimeout(() => $(`.${color}`).removeClass("pressed"), 200);
+  setTimeout(() => $(`.${color}`).removeClass("pressed"), 100);
 }
 
 function showSequence() {
@@ -41,7 +41,7 @@ function showSequence() {
 function checkUserInput(userColor) {
   if (!acceptingInput) return;
 
-  playAudio(userColor);
+  flashButton(userColor);
 
   const expectedColor = randomColorSequence[currentColorIndex];
   if (userColor === expectedColor) {
@@ -62,6 +62,7 @@ function gameOver() {
   $("h1").text("Game Over! Press any key to restart.");
   playAudio("wrong");
   $("body").addClass("game-over");
+  resetGame();
   setTimeout(() => $("body").removeClass("game-over"), 200);
 
   $("body").one("keypress", startGame);
