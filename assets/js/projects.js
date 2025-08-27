@@ -8,7 +8,7 @@
     },
     {
       title: "Mondrian",
-      url: "myWork Projects/Project Mondrian/index.html",
+      url: "./myWork Projects/Project Mondrian/index.html",
       bg: "project-mondrian.png",
       skills: ["html", "css"],
     },
