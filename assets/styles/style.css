@@ -189,3 +189,44 @@ img {
 .card-content:hover ul {
   opacity: 0;
 }
+
+.card:hover .white-background{
+  opacity: 0;
+}
+
+.white-background {
+  background: white;
+  width: 100%;
+  overflow: hidden;      /* slēpj ārpus esošās ikonas */
+  padding: 0.5rem 0;
+}
+
+/*! card SKILLS */
+
+.white-background {
+  background: white;
+  width: 100%;
+  overflow: hidden;
+  padding: 0.5rem 0;
+}
+
+.icon-track {
+  display: inline-flex; /* Mainām uz inline-flex, lai ikonas neizstiepjas */
+  gap: 2rem;
+  white-space: nowrap; /* Novērš ikonu pāreju uz jaunu rindu */
+  animation: scrollIcons 20s linear infinite;
+}
+
+.white-background img {
+  width: 32px;
+  height: 32px;
+}
+
+@keyframes scrollIcons {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Pārvieto par pilnu joslas garumu */
+  }
+}
