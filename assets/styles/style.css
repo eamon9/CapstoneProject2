@@ -163,6 +163,8 @@ img {
   height: 5rem;
 }
 
+/*! card SKILLS */
+
 #about,
 #education,
 #my-journey,
@@ -181,45 +183,67 @@ img {
   transition: opacity 0.3s ease;
 }
 
-.card-content:hover {
+.card:hover .card-content {
   background-color: #00000000;
 }
 
-.card-content:hover h3,
-.card-content:hover ul {
+.card:hover .card-content h3,
+.card:hover .card-content ul {
   opacity: 0;
 }
 
-.card:hover .white-background{
+.card:hover .white-background {
   opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .white-background {
-  background: white;
-  width: 100%;
-  overflow: hidden;      /* slēpj ārpus esošās ikonas */
-  padding: 0.5rem 0;
-}
-
-/*! card SKILLS */
-
-.white-background {
-  background: white;
+  background: #beaaaa;
   width: 100%;
   overflow: hidden;
   padding: 0.5rem 0;
+  transition: opacity 0.3s ease;
+  position: relative;
+  pointer-events: auto;
 }
 
 .icon-track {
-  display: inline-flex; /* Mainām uz inline-flex, lai ikonas neizstiepjas */
+  display: inline-flex;
   gap: 2rem;
-  white-space: nowrap; /* Novērš ikonu pāreju uz jaunu rindu */
+  white-space: nowrap;
   animation: scrollIcons 20s linear infinite;
+  pointer-events: auto;
+}
+
+/* Apstādina animāciju uz white-background vai icon-track hover */
+.card .white-background:hover .icon-track,
+.card .icon-track:hover {
+  animation-play-state: paused !important;
+}
+
+/* Palielina tikai konkrēto ikonu uz hover */
+.icon-track img:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+
+/* Nodrošina, ka .white-background paliek redzams uz hover */
+.card .white-background:hover {
+  opacity: 1;
+}
+
+.white-background:active .icon-track {
+  animation-play-state: paused;
+}
+
+.card .white-background:active {
+  opacity: 1;
 }
 
 .white-background img {
   width: 32px;
   height: 32px;
+  transition: transform 0.2s ease;
 }
 
 @keyframes scrollIcons {
@@ -227,6 +251,11 @@ img {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%); /* Pārvieto par pilnu joslas garumu */
+    transform: translateX(-100%);
   }
+}
+
+/* Nodrošina, ka <a> nebloķē hover notikumus */
+.card a {
+  pointer-events: auto;
 }

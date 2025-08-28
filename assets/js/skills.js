@@ -19,6 +19,7 @@ const skills = [
   {src: "formspree.png", alt: "formspree", title: "Formspree"},
   {src: "api.png", alt: "api", title: "API"},
   {src: "node.png", alt: "node", title: "NodeJS"},
+  {src: "mongoDB.png", alt: "mongo", title: "MongoDB"},
 ];
 
 const container = document.getElementById("skills-row");
